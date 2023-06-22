@@ -9,7 +9,7 @@ export function Footer() {
     return (
         <footer className="flex w-full flex-wrap justify-center px-6 py-6">
             <div>
-                <h4 className="mb-2.5 text-lg font-bold">Siga-nós</h4>
+                <h4 className="mb-2.5 text-center text-lg font-bold">Siga-nós</h4>
                 <ul className="mb-10 flex gap-5">
                     <li>
                         <Link
