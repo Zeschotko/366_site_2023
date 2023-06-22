@@ -5,7 +5,7 @@ import placeholder02 from '../assets/placeholder_02.jpg';
 
 export function Banner() {
     return (
-        <section className="flex flex-wrap justify-center gap-5 pt-16 md:flex-nowrap">
+        <section className="flex flex-wrap justify-center gap-5 px-6 pt-16 md:flex-nowrap">
             <div className="mb-16 max-w-sm lg:max-w-md">
                 <h2 className="mb-4 text-5xl text-red">
                     Cuidar do seu carro nunca foi tão <span className="text-white">fácil.</span>
