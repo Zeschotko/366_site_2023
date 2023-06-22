@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
+  --foreground-rgb: 19, 18, 18;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
@@ -12,16 +12,26 @@
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-end-rgb: 19, 18, 18;
   }
 }
 
+footer {
+  background: rgb(var(--background-start-rgb))
+}
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(var(--background-end-rgb))
+}
+
+section {
+  width: 100%;
+}
+
+.wrapper {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
 }
