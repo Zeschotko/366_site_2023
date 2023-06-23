@@ -25,7 +25,7 @@ export function Form() {
         event.preventDefault();
         setDisableBtn(true);
         setTextBtn('Enviando...');
-        await Axios.post('api/send', form)
+        await Axios.post('/api/send', form)
             .then((response) => {
                 setForm({ name: '', email: '', phone: '', message: '' });
                 setTextBtn('Enviado com sucesso.');
