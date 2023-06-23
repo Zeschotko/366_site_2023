@@ -1,4 +1,4 @@
-import nodemailer from 'nodemailer';
+import * as nodemailer from 'nodemailer';
 
 import { NextRequest, NextResponse } from 'next/server';
 
@@ -13,7 +13,11 @@ export async function POST(request: NextRequest) {
     };
 
     const transporter = nodemailer.createTransport({
-        service: 'gmail',
+        // @ts-ignore
+        host: process.env.NEXT_PUBLIC_SMTP_HOST,
+        service: process.env.NEXT_PUBLIC_SMTP_SERVICE,
+        port: parseInt(process.env.NEXT_PUBLIC_SMTP_PORT || '465', 10),
+        secure: process.env.NEXT_PUBLIC_SMTP_SECURE,
         auth: {
             user: process.env.NEXT_PUBLIC_SMTP_EMAIL,
             pass: process.env.NEXT_PUBLIC_SMTP_PASS,
