@@ -25,7 +25,7 @@ export async function POST(request: NextRequest) {
     });
 
     try {
-        transporter.sendMail(message);
+        await transporter.sendMail(message);
     } catch (err) {
         return NextResponse.json({ status: 400 });
     }
