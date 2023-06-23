@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const Axios = axios.create({
-    baseURL: '366.sammyz.me/',
+    baseURL: `${process.env.NEXT_PUBLIC_API}/`,
 });
 
 export default Axios;
