@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const Axios = axios.create({
-    baseURL: 'https://366.sammyz.me/',
+    baseURL: '366detalhamentoautomotivo.com/',
 });
 
 export default Axios;

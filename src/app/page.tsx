@@ -1,4 +1,3 @@
-import { AboutUs } from '@/components/About';
 import { Banner } from '@/components/Banner';
 import { Contact } from '@/components/Contact';
 import { Footer } from '@/components/Footer';
@@ -11,7 +10,6 @@ export default function Home() {
             <Header />
             <Banner />
             <Services />
-            <AboutUs />
             <Contact />
             <Footer />
         </main>

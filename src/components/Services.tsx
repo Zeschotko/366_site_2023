@@ -7,17 +7,18 @@ import { TitleSections } from './TitleSections';
 export function Services() {
     return (
         <section id="services">
-            <div className="wrapper flex flex-wrap items-center justify-between py-16">
+            <div className="mx-auto flex max-w-[1440px] flex-wrap items-center justify-between px-5 py-16">
                 <TitleSections title="nossos serviços" />
-                <ul className="max-w-2xl md:grid md:grid-cols-2 md:grid-rows-2">
+                <ul className="max-w-5xl md:grid md:grid-cols-3 md:grid-rows-2">
                     <li className="flex gap-7 py-10 md:border-b md:border-r md:border-darkRed md:px-5">
                         <div className="shrink-0">
                             <Image src={Diamond} alt="" className="h-16 w-16" />
                         </div>
                         <div>
-                            <h3 className="mb-10 text-2xl text-red">paint correction</h3>
+                            <h3 className="mb-10 text-2xl text-red">vitrificação 9H</h3>
                             <p className="text leading-6">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                Ceramic coating 9H protege veículo contra danos (UV, chuva ácida,
+                                dejetos de pássaros, seivas). Realça beleza e brilho.
                             </p>
                         </div>
                     </li>
@@ -26,20 +27,48 @@ export function Services() {
                             <Image src={Diamond} alt="" className="h-16 w-16" />
                         </div>
                         <div>
-                            <h3 className="mb-10 text-2xl text-red">paint correction</h3>
+                            <h3 className="mb-10 text-2xl text-red">polimento</h3>
                             <p className="text leading-6">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                O polimento automotivo visa nivelar verniz, remover defeitos,
+                                manchas, oxidação. Tipos: comercial e técnico.
                             </p>
                         </div>
                     </li>
-                    <li className="flex gap-7 py-10 md:border-r  md:border-darkRed md:px-5">
+                    <li className="flex gap-7 py-10 md:border-b md:border-l md:border-darkRed md:px-5">
                         <div className="shrink-0">
                             <Image src={Diamond} alt="" className="h-16 w-16" />
                         </div>
                         <div>
-                            <h3 className="mb-10 text-2xl text-red">paint correction</h3>
+                            <h3 className="mb-10 text-2xl text-red">higienização</h3>
                             <p className="text leading-6">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                Higienização automotiva interna: vapor, anti-bactericida e
+                                Oxi-sanatização eliminam impurezas e desinfetam o ambiente do
+                                motorista
+                            </p>
+                        </div>
+                    </li>
+                    <li className="flex gap-7 py-10 md:border-r md:border-darkRed md:px-5">
+                        <div className="shrink-0">
+                            <Image src={Diamond} alt="" className="h-16 w-16" />
+                        </div>
+                        <div>
+                            <h3 className="mb-10 text-2xl text-red">oxi-sanitização</h3>
+                            <p className="text leading-6">
+                                Ozônio elimina odores, sanitiza ambiente, oxida microorganismos
+                                prejudiciais. Previne doenças respiratórias e ajuda rinites
+                                alérgicas.
+                            </p>
+                        </div>
+                    </li>
+                    <li className="flex gap-7 py-10 md:border-r md:border-darkRed md:px-5">
+                        <div className="shrink-0">
+                            <Image src={Diamond} alt="" className="h-16 w-16" />
+                        </div>
+                        <div>
+                            <h3 className="mb-10 text-2xl text-red">cristalização</h3>
+                            <p className="text leading-6">
+                                Aplicação de cera cristalizadora protege carro, evita danos, realça
+                                brilho intenso e elimina marcas (swirls) na pintura.
                             </p>
                         </div>
                     </li>
@@ -48,9 +77,10 @@ export function Services() {
                             <Image src={Diamond} alt="" className="h-16 w-16" />
                         </div>
                         <div>
-                            <h3 className="mb-10 text-2xl text-red">paint correction</h3>
+                            <h3 className="mb-10 text-2xl text-red">lavagem detalhada</h3>
                             <p className="text leading-6">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                Lavagem em 7 etapas: extremidades, geral, secagem, aspiração,
+                                limpeza, vidros e pneus. Elimina toda a sujeira do veículo.
                             </p>
                         </div>
                     </li>

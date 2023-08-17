@@ -39,7 +39,7 @@ export function Form() {
     }
 
     return (
-        <form onSubmit={send} className="order-2 lg:order-1 lg:w-6/12">
+        <form onSubmit={send} className="order-2 w-full lg:order-1 lg:w-6/12">
             <input
                 type="text"
                 placeholder="Nome"
