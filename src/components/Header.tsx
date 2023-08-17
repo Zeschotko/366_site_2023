@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import Facebook from '../assets/facebook.svg';
 import Instagram from '../assets/instagram.svg';
 import { Logo } from './Logo';
 
@@ -20,14 +19,14 @@ export function Header() {
                             <Image src={Instagram} alt="" className="w-7" />
                         </Link>
                     </li>
-                    <li>
+                    {/* <li>
                         <Link
                             href="https://instagram.com/366detalhamentoautomotivo"
                             target="_blank"
                         >
                             <Image src={Facebook} alt="" className="w-7" />
                         </Link>
-                    </li>
+                    </li> */}
                 </ul>
             </div>
         </header>
