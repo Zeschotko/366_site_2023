@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import placeholder from '../assets/placeholder.jpg';
-import placeholder02 from '../assets/placeholder_02.jpg';
+import first from '../assets/first.jpg';
+import second from '../assets/second.jpg';
+import third from '../assets/third.jpg';
 
 export function Banner() {
     return (
@@ -24,20 +25,23 @@ export function Banner() {
             <ul className="flex max-w-full items-start gap-4 md:max-w-sm lg:max-w-md xl:max-w-2xl">
                 <li className="w-1/2 pt-10">
                     <Image
-                        src={placeholder}
+                        src={first}
                         alt=""
+                        width={1000}
                         className="h-60 rounded-2xl object-cover object-center"
                     ></Image>
                 </li>
                 <li className="w-1/2">
                     <Image
-                        src={placeholder02}
+                        src={second}
                         alt=""
+                        width={1000}
                         className="mb-5 h-44 w-4/5 rounded-2xl object-cover object-center"
                     ></Image>
                     <Image
-                        src={placeholder}
+                        src={third}
                         alt=""
+                        width={1000}
                         className="h-48 w-full rounded-2xl object-cover object-center"
                     ></Image>
                 </li>
